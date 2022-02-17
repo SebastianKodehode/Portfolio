@@ -97,7 +97,7 @@ Landing
 
 .landing-card {
   margin: 0 auto;
-  margin-top: 12rem;
+  margin-top: 15rem;
   left: 0;
   right: 0;
 
@@ -153,7 +153,7 @@ About me
 }
 
 .about-img {
-  padding-top: 5.5rem;
+  padding-top: 5rem;
   justify-content: center;
   text-align: center;
 }
