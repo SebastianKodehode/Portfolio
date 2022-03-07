@@ -2,12 +2,12 @@
 let burgerMenu = document.getElementById('nav-burger');
 let overlay = document.getElementById('nav-list');
 
-burgerMenu.addEventListener('click',function() {
+burgerMenu.addEventListener('click', function () {
   this.classList.toggle("close");
   overlay.classList.toggle("overlay");
 });
 
-overlay.addEventListener('click', function() {
+overlay.addEventListener('click', function () {
   burgerMenu.classList.remove('close')
   overlay.classList.remove('overlay')
 })
@@ -16,29 +16,20 @@ overlay.addEventListener('click', function() {
 
 // ===== Fade in div ===== //
 
-const faders = document.querySelectorAll('.fade-in');
+const trigger = document.querySelectorAll(".fade-in")
 
-const appearOptions = {
-  threshold: 1,
-  rootMargin: "0px 0px -100px 0px"
-};
-
-const appearOnScroll = new IntersectionObserver
-(function(
-  entries, 
-  appearOnScroll) {
+const observer = new IntersectionObserver(
+  entries => {
     entries.forEach(entry => {
-      if (!entry.isIntersecting) {
-        return;
-      } else {
-        entry.target.classList.add('appear');
-        appearOnScroll.unobserve(entry.target);
-      }
+      entry.target.classList.toggle("show", entry.isIntersecting)
     })
-  }, 
-  appearOptions);
+  },
+  {
+    threshold: 0,
+  }
+)
 
-  faders.forEach(fader => {
-    appearOnScroll.observe(fader);
-  })
+trigger.forEach(trigger => {
+  observer.observe(trigger)
+})
 
