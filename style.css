@@ -158,9 +158,28 @@ Landing
   text-shadow: -1px -1px 0 #000, 1px -1px 0 #000, -1px 1px 0 #000, 1px 1px 0 #000;
 }
 
+.socials {
+  position: absolute;
+  left: 0.5rem;
+  bottom: 0.5rem;
+}
+
+.socials img {
+  width: 3rem;
+  height: 3rem;
+}
+
+.cv {
+  position: absolute;
+  right: 1rem;
+  bottom: 1rem;
+}
+
 .cv img {
-  width: 2rem;
-  height: 2rem;
+  width: 2.5rem;
+  height: 2.5rem;
+
+  filter: invert(100%) sepia(2%) saturate(321%) hue-rotate(0deg) brightness(115%) contrast(100%);
 }
 
 /*
