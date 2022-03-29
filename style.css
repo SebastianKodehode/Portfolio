@@ -29,6 +29,20 @@ img {
   border-radius: 0.2rem;
 }
 
+article img {
+  object-fit: contain;
+
+  width: 3rem;
+  height: 3rem;
+
+  margin: 0 1rem;
+}
+
+article i {
+  width: 3rem;
+  height: 3rem;
+}
+
 .spacer {
   margin-bottom: 3.5rem;
 }
@@ -39,6 +53,11 @@ Typography
 
 h2 {
   text-align: center;
+}
+
+.nav-name p {
+  margin: 0;
+  padding: 0;
 }
 
 .card-name p {
@@ -76,6 +95,26 @@ h2 {
   margin: 0.5rem;
 }
 
+.projects-card p {
+  margin-top: 2rem;
+}
+
+.article-text h4 {
+  margin: 0 auto;
+  padding: 0;
+  margin-top: 0.5rem;
+
+  text-align: center;
+}
+
+.article-text p {
+  margin: 0 auto;
+  margin-top: 0.5rem;
+  padding: 0;
+
+  text-align: center;
+}
+
 /*==========
 Layout
 ==========*/
@@ -97,7 +136,9 @@ Layout
 }
 
 .nav-name {
-  margin-left: 1.5rem;
+  margin-left: 1rem;
+  margin-top: 2.5rem;
+  width: 3rem;
   color: white;
   justify-self: flex-start;
   display: flex;
@@ -108,7 +149,27 @@ Layout
   font-size: 1.5rem;
   height: 100%;
   cursor: pointer;
-  opacity: 0;
+  display: flex;
+  flex-direction: column;
+}
+
+.nav-name .logo-name-s {
+  text-align: left;
+  width: 2rem;
+
+  font-weight: bold;
+  color: #fff;
+}
+
+.nav-name .logo-name-m {
+  text-align: right;
+  width: 2rem;
+
+  margin-top: -0.3rem;
+  margin-left: -0.5rem;
+
+  font-weight: bold;
+  color: #fff;
 }
 
 /*
@@ -292,15 +353,6 @@ Experience
   color: #fff;
   font-size: 0.7rem;
 }
-/*  
-.skill-item-github img {
-  margin-top: 0.2rem;
-  margin-bottom: 0;
-  padding: 0;
-
-  height: 3rem;
-  width: 3rem;
-} */
 
 /*
 Projects
@@ -313,7 +365,23 @@ Projects
 
 .projects-card {
   margin: 0 auto;
+  margin-top: 2rem;
   width: 75%;
+}
+
+article {
+  display: flex;
+  flex-direction: row;
+
+  border: 2px #e66465 solid;
+  border-radius: 1rem;
+
+  margin: 1rem auto;
+}
+
+.article-text {
+  display: flex;
+  flex-direction: column;
 }
 
 /*
@@ -383,10 +451,15 @@ textarea {
   color: #fff;
 }
 
+.send:hover {
+  background-color: #fff;
+  color: #6153cc;
+}
+
 .information {
   background-color: rgb(36, 35, 35);
   width: 100%;
-  height: 5rem;
+  height: 7rem;
 }
 
 .links {
@@ -406,6 +479,14 @@ textarea {
 
 .mail a img {
   padding: 0.3rem;
+}
+
+.information .copyright {
+  display: flex;
+  justify-content: center;
+
+  font-size: 0.7rem;
+  color: #fff;
 }
 
 /*==========
@@ -490,6 +571,9 @@ Burger Menu
   text-align: center;
   padding-top: 20px;
   transition: all 0.3s ease-in-out;
+  display: flex;
+  justify-content: center;
+  align-items: center;
 }
 
 #nav-list.overlay {
@@ -508,7 +592,6 @@ Burger Menu
 #nav-list ul {
   margin: 1rem 0;
   padding: 0;
-  margin-top: 12rem;
 }
 
 #nav-list a {
