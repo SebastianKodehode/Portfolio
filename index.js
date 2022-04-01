@@ -15,7 +15,6 @@ overlay.addEventListener('click', function () {
 
 
 // ===== Fade in div ===== //
-
 const trigger = document.querySelectorAll(".fade-in")
 
 const observer = new IntersectionObserver(

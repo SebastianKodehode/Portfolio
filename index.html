@@ -9,7 +9,7 @@
 
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="style.css">
-    <link rel="icon" href="images/logo.png">
+    <link rel="icon" href="logos/logo.png">
 
     <title>Sebastian</title>
 </head>
@@ -42,14 +42,15 @@
 
             <div class="background">
                 <video autoplay loop src="bluestatic.mp4" type="video/mp4" muted class="background-mp4"></video>
+                <!-- Credit to Eugene Vasilevich for making the awesome video! -->
             </div>
 
             <div class="landing-card">
-                <div class="card-img">
-                    <img src="images/profpic.jpeg" alt="picture of developer">
-                </div>
+                <figure class="card-img">
+                    <img src="images/Portfoliobilde.jpeg" alt="picture of developer">
+                </figure>
                 <div class="card-name">
-                    <p>Sebastian Møldrup</p>
+                    <h1>Sebastian Møldrup</h1>
                 </div>
                 <div class="card-info">
                     <p>Front end utvikler</p>
@@ -62,7 +63,7 @@
 
             <div class="socials">
                 <a href="https://github.com/SebastianKodehode?tab=repositories" target="_blank">
-                    <img src="images/Github-logo.png">
+                    <img src="logos/Github-logo.png">
                 </a>
             </div>
 
@@ -72,12 +73,16 @@
             <div id="2" class="spacer"> &nbsp; </div>
             <div class="about-card fade-in">
 
-                <div class="about-img">
-                    <img src="images/.">
-                </div>
+                <!-- <figure class="about-img">
+                    <img src="images/illu.svg">
+                </figure> -->
+
+                <figure class="about-img">
+                    <img src="images/Vector.svg">
+                </figure>
 
                 <div class="about-header">
-                    <h2> &lt; Om meg &gt; </h2>
+                    <h2> Om meg </h2>
                 </div>
 
                 <div class="about-txt">
@@ -91,37 +96,37 @@
 
                     <div class="skills-row">
                         <div class="skills-item skill-item-react">
-                            <img src="images/reactlogo.png" rel>
+                            <img src="logos/reactlogo.png" rel>
                             <div class="skills-item-name">React</div>
                         </div>
                         <div class="skills-item skill-item-figma">
-                            <img src="images/Figma-logo.png" rel>
+                            <img src="logos/Figma-logo.png" rel>
                             <div class="skills-item-name">Figma</div>
                         </div>
                     </div>
 
                     <div class="skills-row">
                         <div class="skills-item skill-item-html">
-                            <img src="images/htmllogo.png" alt="html logo">
+                            <img src="logos/htmllogo.png" alt="html logo">
                             <div class="skills-item-name">HTML</div>
                         </div>
                         <div class="skills-item skill-item-css">
-                            <img src="images/csslogo.png" alt="css logo">
+                            <img src="logos/csslogo.png" alt="css logo">
                             <div class="skills-item-name">CSS</div>
                         </div>
                         <div class="skills-item skill-item-js">
-                            <img src="images/jslogo.png" alt="js logo">
+                            <img src="logos/jslogo.png" alt="js logo">
                             <div class="skills-item-name">Javascript</div>
                         </div>
                     </div>
 
                     <div class="skills-row">
                         <div class="skills-item skill-item-github">
-                            <img src="images/Github-logo.png" rel>
+                            <img src="logos/Github-logo.png" rel>
                             <div class="skills-item-name">Github</div>
                         </div>
                         <div class="skills-item skill-item-git">
-                            <img src="images/gitlogo.png" rel>
+                            <img src="logos/gitlogo.png" rel>
                             <div class="skills-item-name">Git</div>
                         </div>
                     </div>
@@ -134,9 +139,9 @@
 
             <div id="3" class="spacer"> &nbsp; </div>
 
-            <div class="projects-card">
+            <div class="projects-card fade-in">
                 <div class="projects-header">
-                    <h2> &lt; Prosjekter &gt; </h2>
+                    <h2> Prosjekter </h2>
                 </div>
                 <p>
                     Interessen for programmering begynte i ung alder, men selv om jeg startet senere i tid så er den
@@ -148,35 +153,54 @@
                 </p>
 
                 <article>
-                    <div>
-                        <img src="images/Github-logo.png" rel="github logo">
-                        <i class="fa-solid fa-browser"></i>
+                    <div class="article-logos">
+                        <a href="https://github.com/SebastianKodehode/Pokemon-Api" target=”_blank”>
+                            <img src="logos/Github-logo.png" rel="github logo">
+                            <p>Live server</p>
+                        </a>
+                        <a href="https://sebastiankodehode.github.io/Pokemon-Api/">
+                            <img src="icons/liveserver.svg" rel="image of live server icon">
+                            <p>Github</p>
+                        </a>
                     </div>
                     <div class="article-text">
                         <h4>Pokemon API</h4>
-                        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor</p>
+                        <p>First API project, decided to make a fun random catch a pokemon game
+                        </p>
                     </div>
                 </article>
 
                 <article>
-                    <div>
-                        <img src="images/Github-logo.png" rel="github logo">
-                        <i class="fa-solid fa-browser"></i>
+                    <div class="article-logos">
+                        <a href="https://github.com/SebastianKodehode/Random-Password-Generator" target=”_blank”>
+                            <img src="logos/Github-logo.png" rel="github logo">
+                            <p>Live server</p>
+                        </a>
+                        <a href="https://sebastiankodehode.github.io/Random-Password-Generator/">
+                            <img src="icons/liveserver.svg" rel="image of live server icon">
+                            <p>Github</p>
+                        </a>
                     </div>
                     <div class="article-text">
                         <h4>Random password generator</h4>
-                        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor</p>
+                        <p>Scrimba inspired random password generator</p>
                     </div>
                 </article>
 
                 <article>
-                    <div>
-                        <img src="images/Github-logo.png" rel="github logo">
-                        <i class="fa-solid fa-browser"></i>
+                    <div class="article-logos">
+                        <a href="https://github.com/SebastianKodehode/Metric-Imperial-Unit-Converter" target=”_blank”>
+                            <img src="logos/Github-logo.png" rel="github logo">
+                            <p>Live server</p>
+                        </a>
+                        <a href="https://sebastiankodehode.github.io/Metric-Imperial-Unit-Converter/">
+                            <img src="icons/liveserver.svg" rel="image of live server icon">
+                            <p>Github</p>
+                        </a>
                     </div>
                     <div class="article-text">
                         <h4>Unit donverter</h4>
-                        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor</p>
+                        <p>Scrimba inspired unit converter with imperial and metric units</p>
                     </div>
                 </article>
 
@@ -205,11 +229,11 @@
 
         <div class="contact">
 
-            <div id="4  " class="spacer"> &nbsp; </div>
+            <div id="4" class="spacer"> &nbsp; </div>
 
             <div class="contact-card">
                 <div class="contact-header">
-                    <h2> &lt; Kontakt &gt; </h2>
+                    <h2> Kontakt </h2>
                     <p>Ring gjerne for en hyggelig samtale</p>
                     <p>Tlf:. 41 39 11 74</p>
                 </div>
@@ -238,13 +262,13 @@
 
                 <div class="link">
                     <a href="https://github.com/SebastianKodehode?tab=repositories" target="_blank">
-                        <img src="images/Github-logo.png">
+                        <img src="logos/Github-logo.png">
                     </a>
                 </div>
 
                 <div class="mail link">
                     <a href="mailto:sebastian.kodehode@gmail.com">
-                        <img src="images/mail.png">
+                        <img src="icons/mail.png">
                     </a>
 
                 </div>
