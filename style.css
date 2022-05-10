@@ -457,6 +457,7 @@ Projects
 .projects {
   margin: 0 auto;
   width: 80%;
+  height: 100%;
 }
 
 .projects-card {
