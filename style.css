@@ -239,7 +239,7 @@ Landing
 }
 
 .background {
-  inset: 0px;
+  inset: 0px; 
   width: 100%;
   height: 100vh;
   overflow: hidden;
@@ -755,4 +755,75 @@ Fade in effect
   animation-timing-function: ease-out;
 
   opacity: 1;
+}
+
+
+/* 
+TABLET DIMENSION
+*/  
+
+
+@media only screen and (min-width: 800px) {
+  .about-card {
+      display: grid;
+      background: 0;
+      box-shadow: none;
+      border: 0;
+      margin: 0;
+      padding: 2rem 0;
+      padding-bottom: 2rem;
+      height: 100%;
+      align-items: center;
+      text-align: center;
+      grid-template-columns: 40% 40%;
+      justify-content: center;
+      grid-template-rows: 8rem 5rem 8rem;
+      grid-auto-flow: row;
+      grid-template-areas:
+        "a d"
+        "b d"
+        "e d";
+  }
+
+  .about-img {
+    grid-area: a;
+    height: 100%;
+    padding: 0;
+    margin: 0;
+    align-self: center; 
+  }
+
+  .about-img img {
+    padding: 0;
+    margin: 1rem auto;
+  }
+
+  .about-header {
+    grid-area: b;
+    text-align: center;
+  }
+
+  .about-header h2 {
+    padding: 0;
+    margin: 0 auto;
+  }
+
+  .about-txt {
+    grid-area: e;
+    height: 100%;
+    padding: 0 1rem;
+    margin: 0 auto;
+    text-align: left;
+  }
+
+  .about-txt p {
+    padding: 0;
+    margin: 0 auto;
+  }
+
+  .skills-col {
+    grid-area: d;
+    padding-top: 2rem;
+    height: 100%;
+  }
 }
